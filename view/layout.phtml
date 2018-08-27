@@ -1,0 +1,90 @@
+<?php
+/**
+ * YAWIK - Karriere24
+ *
+ * General layout template file. Defines the general layout.
+ *
+ * @copyright (c) 2013 - 2016 Cross Solution (http://cross-solution.de)
+ * @license   MIT
+ */
+
+// See: http://yawik.readthedocs.org/en/latest/modules/core/notifications.html
+$lang = $this->params('lang');
+$notifications = $this->partial('core/notifications');
+
+
+$this->configHeadScript()->prependFile($this->basepath('/Core/js/core.init.js'));
+$this->configHeadScript()->prependFile($this->basePath('/assets/pnotify/pnotify.custom.min.js'), 'text/javascript');
+$this->configHeadScript()->prependFile($this->basePath('/assets/bootstrap/js/bootstrap.min.js'));
+$this->configHeadScript()->prependFile($this->basePath('/assets/jquery/jquery.min.js'));
+$this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/select2.min.js'));
+if ($lang!='en') {
+    $this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/i18n/' . $lang . '.js'));
+}
+$this->configHeadScript()->appendScript('var lang="' . $lang . '";'
+                                        . 'var basePath="' . $this->basePath() . '";');
+
+$this->headLink()->prependStylesheet($this->basePath('/assets/pnotify/pnotify.custom.min.css'));
+$this->headLink()->prependStylesheet($this->basePath('/Karriere24/animate.min.css'));
+$this->headLink()->prependStylesheet($this->basePath('/Karriere24/Karriere24.css'));
+$this->headLink()->appendStylesheet($this->basePath('/assets/select2/css/select2.css'));
+?>
+<?php echo $this->doctype(); ?>
+<html lang="<?php echo $this->params('lang')?>">
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle('Karriere24')->setSeparator(' - ')->setAutoEscape(false) ?>
+    <meta name="keywords" content="Bewerbermanagement System, Bewerberverwaltung"/>
+    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+    <?php echo $this->headLink() ?>
+    <?php echo $this->configHeadScript() ?>
+    <?php echo $this->headStyle() ?>
+</head>
+<body>
+<a class="sr-only" href="#content">Skip to main content</a>
+<header id="top" role="banner" class="container-fluid">
+    <div class="navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".cam-navbar-collapse" data-toggle="collapse"
+                    type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>"><?=$this->translate('Karriere24', \Karriere24\Module::TEXT_DOMAIN)?></a>
+            <a class="navbar-brand visible-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">Y</a>
+        </div>
+        <nav id="main-navigation" class="navbar-collapse collapse" role="navigation">
+            <?php
+            echo $this->navigation('Core/Navigation')
+                ->setAcl($this->services('acl'))
+                ->setRole($this->auth('role'))
+                ->menu()
+                ->setMaxDepth(1) // only show the top level entries
+                ->renderPartial(null, 'main-navigation')
+            ?>
+            <?php echo $this->loginInfo() ?>
+        </nav>
+        <!-- /main-navigation -->
+    </div>
+</header>
+<main id="content" class="coll-md-12">
+     <div class="container-fluid">
+     <?php echo $notifications?>
+     <?php echo $this->content; ?>
+     </div>
+</main>
+<!-- /container -->
+<footer id="footer">
+    <div class="container-fluid">
+                <span class="pull-left"><small>&copy; <?php echo date("Y")?> <a href="http://cross-solution.de">Cross Solution</a>. <?php echo $this->translate('All rights reserved.') ?>
+                         </small></span>
+                <span class="pull-right"><small>
+                      <a href="<?php echo $this->basePath("/content/about#impressum")?>">Impressum</a> | Powered by <a href="http://yawik.org">YAWIK</a>
+                    </small> </span>
+    </div>
+</footer>
+<?php echo $this->partial("piwik")?>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?php
+
+if (!\Karriere24\Module::$isLoaded) return array();
+
+return array(
+        'view_manager' => array(
+            'template_map' => array(
+             #   'piwik' => '%%yawik.demoskin.piwik%%'  // location of the piwik code
+                )
+	        ),
+	    'Auth' => array(
+	        'first_login' => array(
+	            'role' => 'user',                       // initial role, if somebody logs in
+
+	        ),
+	        array(
+                'external_applications' => array(
+                  '%%external.app.prefix%%' => '%%external.app.key%%',
+                   ),
+             ),
+	    ),
+	);

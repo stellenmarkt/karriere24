@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="de-DE">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="<?php echo $this->basePath("/Jobs/templates/default/style.css")?>" type="text/css" media="screen">
+<style>
+form > div {
+  border:1px solid #eee;
+}
+</style>
+</head>
+<body>
+
+<div id="page">
+ <div id="header">
+  <div id="headerimg">
+    <div><?php echo $this->organizationName?></div>
+  </div>
+ </div>
+<div id="content">
+ <div><?php echo $this->organizationName?> sucht:</div>
+
+<h1><?php echo $this->title?></h1>
+
+<h4>Aufgaben:</h4>
+<?php echo $this->requirements;?>
+<h4>Anforderungen:</h4>
+<?php echo $this->qualifications;?>
+<h4>Das können Sie erwarten:</h4>
+<?php echo $this->benefits;?>
+
+<h2><a target="_new" href="<?php echo $this->uriApply ?>"><strong>Zum Online Bewerbungsformular</strong></a></h2>
+
+<address>
+<strong><?php echo $this->organizationName?></strong><br/>
+<?php echo $this->street?><br>
+<?php echo $this->postalCode?> <?php echo $this->city?><br><br>
+
+</address>
+</div>
+</div>
+</body>
+</html>
