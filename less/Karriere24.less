@@ -30,21 +30,22 @@ body {
  * footer on the page
  */
 #footer {
-   .hidden-xs;
-   .navbar;
-   .navbar-fixed-bottom;
-   height: @footer-height;
-   min-height: @footer-height;
-   max-height: @footer-height;
-   background-color: @gray-lighter;
+    .hidden-xs;
+    .navbar;
+    .navbar-fixed-bottom;
+    height: @footer-height;
+    min-height: @footer-height;
+    max-height: @footer-height;
+    background-color: @gray-lighter;
+    z-index: 999;
 }
 
 main {
-        margin-bottom: (@footer-height + 10px);
+    margin-bottom: (@footer-height + 10px);
 }
 
 .nav {
-   margin-bottom: -2px;
+    margin-bottom: -2px;
 }
 
 .featured-image-box {
@@ -82,19 +83,19 @@ main {
 * removes the gradients from carousel control
 */
 .carousel-control {
-  &.left {
-    #gradient > .horizontal(@start-color: rgba(0,0,0,0); @end-color: rgba(0,0,0,0));
-  }
-  &.right {
-    left: auto;
-    right: 0;
-    #gradient > .horizontal(@start-color: rgba(0,0,0,0); @end-color: rgba(0,0,0,0));
-  }
+    &.left {
+        #gradient > .horizontal(@start-color: rgba(0,0,0,0); @end-color: rgba(0,0,0,0));
+    }
+    &.right {
+        left: auto;
+        right: 0;
+        #gradient > .horizontal(@start-color: rgba(0,0,0,0); @end-color: rgba(0,0,0,0));
+    }
 }
 
 .yk-logo-sm {
-  max-width: 80px;
-  max-height: 50px;
-  float: left;
-  margin-right: 5px;
+    max-width: 80px;
+    max-height: 50px;
+    float: left;
+    margin-right: 5px;
 }
