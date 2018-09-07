@@ -78,6 +78,7 @@ foreach ($this->jobs as $jobObject) {
         $location->addChild('postalcode', $locationObject->getPostalCode());
         $location->addChild('region', $locationObject->getRegion());
     }
+	
     $organization = $job->addChild('organization');
     if (is_object($jobObject->getOrganization())) {
         $organization->addAttribute('id', $jobObject->getOrganization()->getId() );
