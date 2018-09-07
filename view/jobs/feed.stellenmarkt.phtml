@@ -78,6 +78,12 @@ foreach ($this->jobs as $jobObject) {
         $location->addChild('postalcode', $locationObject->getPostalCode());
         $location->addChild('region', $locationObject->getRegion());
     }
+	$metadatas = $job->addChild('metadatas');
+	foreach($jobObject->getMetaData() as $k=>$v) {
+		$metadata = $metadatas->addChild('metadata');
+		$metadata->addChild('key', $k);
+		$metadata->addChild('value', $v);
+	}
 	
     $organization = $job->addChild('organization');
     if (is_object($jobObject->getOrganization())) {
