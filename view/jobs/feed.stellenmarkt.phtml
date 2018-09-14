@@ -78,6 +78,12 @@ foreach ($this->jobs as $jobObject) {
         $location->addChild('postalcode', $locationObject->getPostalCode());
         $location->addChild('region', $locationObject->getRegion());
     }
+	$templatedatas = $job->addChild('templatedatas');
+	foreach($jobObject->getTemplateValues() as $k=>$v) {
+		$templatedata = $templatedatas->addChild('templatedata');
+		$templatedata->addChild('template_key', $k);
+		$templatedata->addChild('template_value', $v);
+	}
 	$metadatas = $job->addChild('metadatas');
 	foreach($jobObject->getMetaData() as $k=>$v) {
 		$metadata = $metadatas->addChild('metadata');
