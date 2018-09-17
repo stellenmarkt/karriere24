@@ -58,7 +58,8 @@ foreach ($this->jobs as $jobObject) {
     /* @var \Jobs\Entity\Job $jobObject */
     $job = $result->addChild('job');
     $job->addAttribute('id', $jobObject->getId());
-    $job->addChild('title', $jobObject->getTitle());
+    $job->addChild('title');
+	$job->title = $jobObject->getTitle();
     $job->addChild('locations', $jobObject->getLocation());
     $job->addChild('datePublishStart', $jobObject->getDatePublishStart()?date_format($jobObject->getDatePublishStart(),$dateFormat):"");
     $job->addChild('datePublishEnd', $jobObject->getDatePublishEnd()?date_format($jobObject->getDatePublishEnd(),$dateFormat):"");
@@ -81,14 +82,18 @@ foreach ($this->jobs as $jobObject) {
 	$templatedatas = $job->addChild('templatedatas');
 	foreach($jobObject->getTemplateValues() as $k=>$v) {
 		$templatedata = $templatedatas->addChild('templatedata');
-		$templatedata->addChild('template_key', $k);
-		$templatedata->addChild('template_value', $v);
+		$templatedata->addChild('template_key');
+		$templatedata->template_key = $k;
+		$templatedata->addChild('template_value');
+		templatedata->template_value = $v;
 	}
 	$metadatas = $job->addChild('metadatas');
 	foreach($jobObject->getMetaData() as $k=>$v) {
 		$metadata = $metadatas->addChild('metadata');
-		$metadata->addChild('key', $k);
-		$metadata->addChild('value', $v);
+		$metadata->addChild('key');
+		$metadata->key = $k;
+		$metadata->addChild('value');
+		$metadata->value = $v;
 	}
 	
     $organization = $job->addChild('organization');
