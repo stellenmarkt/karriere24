@@ -85,7 +85,7 @@ foreach ($this->jobs as $jobObject) {
 		$templatedata->addChild('template_key');
 		$templatedata->template_key = $k;
 		$templatedata->addChild('template_value');
-		templatedata->template_value = $v;
+		$templatedata->template_value = $v;
 	}
 	$metadatas = $job->addChild('metadatas');
 	foreach($jobObject->getMetaData() as $k=>$v) {
