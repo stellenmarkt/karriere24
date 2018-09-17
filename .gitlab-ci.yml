@@ -21,6 +21,7 @@ deploy_master:
  only: 
    - master
  script:
+   - ls -l
    - rsync -av ./ live@karriere24.com:/
 
 deploy_staging:
@@ -28,7 +29,8 @@ deploy_staging:
  except: 
    - master
  script:
-   - echo "what shall we do?"
+   - ls -l
+   - echo "where we are? what shall we do?"
 
 test:
  stage: test
