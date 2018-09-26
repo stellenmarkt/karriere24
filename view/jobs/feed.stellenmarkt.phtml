@@ -79,6 +79,18 @@ foreach ($this->jobs as $jobObject) {
         $location->addChild('postalcode', $locationObject->getPostalCode());
         $location->addChild('region', $locationObject->getRegion());
     }
+	$description = $job->addChild('description');
+	$job->description = $jobObject->getTemplateValues()->getDescription();
+	//Scrapy uses tasks
+	$qualifications = $job->addChild('qualifications');
+	$job->qualifications = $jobObject->getTemplateValues->getQualifications();
+	$requirements = $job->addChild('requirements');
+	$job->requirements = $jobObject->getTemplateValues()->getRequirements();
+	$benefits = $job->addChild('benefits');
+	$job->benefits = $jobObject->getTemplateValues()->getBenefits();
+	$html = $job->addChild('html');
+	$job->html = $jobObject->getTemplateValues()->getHtml();
+	
 	$templatedatas = $job->addChild('templatedatas');
 	foreach($jobObject->getTemplateValues() as $k=>$v) {
 		$templatedata = $templatedatas->addChild('templatedata');
