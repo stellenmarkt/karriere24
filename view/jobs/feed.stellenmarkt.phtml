@@ -83,7 +83,7 @@ foreach ($this->jobs as $jobObject) {
 	$job->description = $jobObject->getTemplateValues()->getDescription();
 	//Scrapy uses tasks
 	$qualifications = $job->addChild('qualifications');
-	$job->qualifications = $jobObject->getTemplateValues->getQualifications();
+	$job->qualifications = $jobObject->getTemplateValues()->getQualifications();
 	$requirements = $job->addChild('requirements');
 	$job->requirements = $jobObject->getTemplateValues()->getRequirements();
 	$benefits = $job->addChild('benefits');
