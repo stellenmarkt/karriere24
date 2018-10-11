@@ -11,7 +11,11 @@ return array(
         'factories' => array(
             'Karriere24/Listener/DelayedUserRegistrationMailSender' => 'Karriere24\Factory\Listener\DelayedUserRegistrationMailSenderFactory',
             \Karriere24\Listener\JobImportListener::class => \Karriere24\Factory\Listener\JobImportListenerFactory::class,
+			\Karriere24\Model\ApiJobDehydrator::class => \Karriere24\Factory\Model\ApiJobDehydratorFactory::class,
         ),
+		'aliases' => [
+			'Jobs\Model\ApiJobDehydrator' => \Karriere24\Model\ApiJobDehydrator::class,
+		],
     ),
 
     'event_manager' => [
