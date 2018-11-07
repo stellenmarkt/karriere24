@@ -7,10 +7,13 @@
  * @license  
  * @author   
  */
+
 namespace Karriere24\Factory\Model;
+
 use Interop\Container\ContainerInterface;
 use Karriere24\Model\ApiJobDehydrator;
 use Zend\ServiceManager\Factory\FactoryInterface;
+
 /**
  * Factory for ApiJobDehydrator
  *

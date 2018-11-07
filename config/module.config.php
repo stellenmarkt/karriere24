@@ -14,7 +14,7 @@ return array(
 			\Karriere24\Model\ApiJobDehydrator::class => \Karriere24\Factory\Model\ApiJobDehydratorFactory::class,
         ),
 		'aliases' => [
-			'Jobs\Model\ApiJobDehydrator' => \Karriere24\Model\ApiJobDehydrator::class,
+            'Jobs\Model\ApiJobDehydrator' => \Karriere24\Model\ApiJobDehydrator::class
 		],
     ),
 

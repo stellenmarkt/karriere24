@@ -7,10 +7,13 @@
  * @copyright  
  */
 namespace Karriere24\Model;
+
 use Jobs\Entity\Job;
 use Zend\View\Helper\Url;
 use Jobs\View\Helper\JobUrl;
-class ApiJobDehydrator
+use Jobs\Model\ApiJobDehydrator as OriginalApiJobDehydrator;
+
+class ApiJobDehydrator extends OriginalApiJobDehydrator
 {
     /**
      * ViewHelper for generating an url
@@ -61,6 +64,7 @@ class ApiJobDehydrator
                   'absolute' => true,
                 ]
             ),
+            'test' => 'test',
             'organization' => array(
                 'name' => $job->getOrganization()->getOrganizationName()->getName(),
             ),
