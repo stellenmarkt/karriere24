@@ -71,6 +71,11 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
      */
     public function dehydrate(Job $job)
     {
+		$workLocations=array();
+		foreach ($job->getLocations() as $locationObject) {
+			/* @var \Jobs\Entity\Location $locationObject */
+			$workLocations[] = $locationObject->toArray();
+		}
         return array(
             'datePublishStart' => $job->getDatePublishStart(),
             'title' => $job->getTitle(),
@@ -87,6 +92,7 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
 					'absolute' => true,
 				]
 			),
+			'workLocations' => $workLocations,
             'organization' => array(
                 'name' => $job->getOrganization()->getOrganizationName()->getName(),
             ),
