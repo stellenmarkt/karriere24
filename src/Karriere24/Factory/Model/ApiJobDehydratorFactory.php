@@ -36,9 +36,11 @@ class ApiJobDehydratorFactory implements FactoryInterface
         $viewManager = $container->get('ViewHelperManager');
         $urlHelper = $viewManager->get('url');
         $jobUrlHelper = $viewManager->get('jobUrl');
+		$applyUrlHelper = $viewManager->get('applyUrl');
         $apiJobDehydrator = new ApiJobDehydrator();
         $apiJobDehydrator->setUrl($urlHelper);
         $apiJobDehydrator->setJobUrl($jobUrlHelper);
+		$apiJobDehydrator->setApplyUrl($applyUrlHelper);
         return $apiJobDehydrator;
     }
 }

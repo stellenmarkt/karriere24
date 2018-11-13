@@ -27,6 +27,13 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
    * @var JobUrl $jobUrl
    */
     protected $jobUrl;
+	/**
+	* ViewHelper for generating an url to apply
+	*
+	* @var ApplyUrl $applyUrl
+	*/
+	protected $applyUrl;
+	
     /**
      * @param Url $url
      *
@@ -47,6 +54,16 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
         $this->jobUrl = $url;
         return $this;
     }
+	/**
+    * @param ApplyUrl $url
+    *
+    * @return $this
+    */
+    public function setApplUrl($url)
+    {
+        $this->applyUrl = $url;
+        return $this;
+    }
     /**
      * @param Job $job
      *
@@ -64,14 +81,21 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
                   'absolute' => true,
                 ]
             ),
-            'test' => 'test',
+			'application' => $this->applyUrl->__invoke(
+				$job,[
+					'linkOnly'=>true,
+					'absolute' => true,
+				]
+			),
             'organization' => array(
                 'name' => $job->getOrganization()->getOrganizationName()->getName(),
             ),
             'template_values' => array(
+				'description' => $job->getTemplateValues()->getDescription(),
                 'requirements' => $job->getTemplateValues()->getRequirements(),
                 'qualification' => $job->getTemplateValues()->getQualifications(),
-                'benefits' => $job->getTemplateValues()->getBenefits()
+                'benefits' => $job->getTemplateValues()->getBenefits(),
+				'html' => $job->getTemplateValues()->getHtml(),
             )
         );
     }
