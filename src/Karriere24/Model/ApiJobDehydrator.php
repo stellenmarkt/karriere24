@@ -77,6 +77,7 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
 			$workLocations[] = $locationObject->toArray();
 		}
         return array(
+			'id' => $job->getId(),
             'datePublishStart' => $job->getDatePublishStart(),
             'title' => $job->getTitle(),
             'location' => $job->getLocation(),
@@ -92,8 +93,10 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
 					'absolute' => true,
 				]
 			),
+			'email' => $job->getContactEmail(),
 			'workLocations' => $workLocations,
             'organization' => array(
+				'id' => $job->getOrganization()->getId(),
                 'name' => $job->getOrganization()->getOrganizationName()->getName(),
             ),
             'template_values' => array(
