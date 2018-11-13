@@ -59,7 +59,7 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
     *
     * @return $this
     */
-    public function setApplUrl($url)
+    public function setApplyUrl($url)
     {
         $this->applyUrl = $url;
         return $this;
