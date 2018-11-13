@@ -106,7 +106,7 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
                 'benefits' => $job->getTemplateValues()->getBenefits(),
 				'html' => $job->getTemplateValues()->getHtml(),
             ),
-			'plainText' => $job->getMetaData('plainText),
+			'plainText' => $job->getMetaData('plainText'),
         );
     }
     /**
