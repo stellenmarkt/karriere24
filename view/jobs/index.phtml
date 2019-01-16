@@ -1,14 +1,11 @@
 <?php //description: Renders the list of public jobs. ?>
 <?php
-$this->headScript()->appendFile($this->basepath('/Core/js/core.pagination-container.js'))
-     ->appendFile($this->basePath('Core/js/core.forms.js'))
-     ->appendFile($this->basePath('assets/select2/js/select2.min.js'))
-    ->appendFile($this->basePath('Karriere24/jquery.matchHeight.js'))
-    ->appendFile($this->basePath('Karriere24/jobboard.js'));
-if ($this->params('lang') != 'en') {
-    $this->headScript()->appendFile($this->basePath('assets/select2/js/i18n/' . $this->params('lang') . '.js'));
-}
-$this->headLink()->appendStylesheet($this->basePath('assets/select2/css/select2.css'))
+$this->headScript()->appendFile($this->basepath('modules/Core/js/core.pagination-container.js'))
+     ->appendFile($this->basePath('modules/Core/js/core.forms.js'))
+
+    ->appendFile($this->basePath('modules/Karriere24/jquery.matchHeight.js'))
+    ->appendFile($this->basePath('modules/Karriere24/jobboard.js'));
+
 ?>
 <?php
 
@@ -66,6 +63,7 @@ $this->headScript()->captureStart();
 <nav class="navbar yk-toolbar" id="jobs-list-filter-wrapper">
     <div class="search-form-container">
         <?php
+        if ($jobs instanceof \Solr\FacetsProviderInterface):
             $queryParams = $this->params()->fromQuery();
             foreach (array_keys($this->jobs->getFacets()->toArray()) as $facetName):
                 if (isset($queryParams[$facetName])):
@@ -75,6 +73,7 @@ $this->headScript()->captureStart();
                     endforeach;
                 endif;
             endforeach;
+            endif;
              echo $this->searchForm($this->filterForm)  ?>
     </div>
 </nav>
