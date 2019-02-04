@@ -80,6 +80,7 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
 			'id' => $job->getId(),
             'datePublishStart' => $job->getDatePublishStart(),
             'title' => $job->getTitle(),
+            'language' => $job->getLanguage(),
             'location' => $job->getLocation(),
             'link' => $this->jobUrl->__invoke(
                 $job,[
