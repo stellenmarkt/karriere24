@@ -1,5 +1,5 @@
-Jobboard
-========
+Karriere24
+==========
 
 This YAWIK module makes YAWIK to work like a jobportal.
 
