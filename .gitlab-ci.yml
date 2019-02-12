@@ -22,7 +22,7 @@ deploy_master:
    - master
  script:
    - ls -l
-   - rsync -av ./ live@karriere24.com:/
+   - rsync -av ./ yawik@karriere24.de:/
 
 deploy_staging:
  stage: deploy
