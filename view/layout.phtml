@@ -13,23 +13,19 @@ $lang = $this->params('lang');
 $notifications = $this->partial('core/notifications');
 
 
-$this->configHeadScript()->prependFile($this->basepath('/Core/js/core.init.js'));
-$this->configHeadScript()->prependFile($this->basePath('/assets/pnotify/pnotify.custom.min.js'), 'text/javascript');
-$this->configHeadScript()->prependFile($this->basePath('/assets/bootstrap/js/bootstrap.min.js'));
-$this->configHeadScript()->prependFile($this->basePath('/assets/jquery/jquery.min.js'));
-$this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/select2.min.js'));
-$this->configHeadScript()->appendFile($this->basePath('/Karriere24/cookie.notice.min.js'));
+$this->headLink()->prependStylesheet($this->basePath('dist/css/core.min.css'));
+$this->configHeadScript()->prependFile($this->basepath('dist/js/core.js'));
+$this->configHeadScript()->appendFile($this->basePath('modules/Karriere24/cookie.notice.min.js'));
 
-if ($lang!='en') {
-    $this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/i18n/' . $lang . '.js'));
-}
+$langScript = 'dist/locales/' . $lang . '.js';
+$this->configHeadScript()->appendFile($this->basePath($langScript));
+
 $this->configHeadScript()->appendScript('var lang="' . $lang . '";'
                                         . 'var basePath="' . $this->basePath() . '";');
 
-$this->headLink()->prependStylesheet($this->basePath('/assets/pnotify/pnotify.custom.min.css'));
-$this->headLink()->prependStylesheet($this->basePath('/Karriere24/animate.min.css'));
-$this->headLink()->prependStylesheet($this->basePath('/Karriere24/Karriere24.css'));
-$this->headLink()->appendStylesheet($this->basePath('/assets/select2/css/select2.css'));
+$this->headLink()->appendStylesheet($this->basePath('modules/Karriere24/animate.min.css'));
+$this->headLink()->appendStylesheet($this->basePath('modules/Karriere24/Karriere24.css'));
+
 ?>
 <?php echo $this->doctype(); ?>
 <html lang="<?php echo $this->params('lang')?>">

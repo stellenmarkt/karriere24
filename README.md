@@ -1,28 +1,60 @@
-Karriere24
-==========
+Karriere24 YAWIK module
+=======================
 
-This YAWIK module makes YAWIK to work like a jobportal.
+This module provides the layout and special functionality for the yawik instance
+running on [karriere24.com](http://karriere24.com)
 
-* The startpage contains a List of Jobs
-* Default role of users is "user"
-* simple controller for an about page
+Requirements
+------------
 
-This module is running on:
-
-https://jobs.yawik.org
-
-You can use this Module as starting point to write your own Module.
-
+running [YAWIK](https://github.com/cross-solution/YAWIK) >= 0.32
 
 Installation
 ------------
 
-```
-cd YAWIK/modules
-git clone https://github.com/yawik/Jobboard.git
-cp YAWIK/modules/Jobboard/Jobboard.module.php.dist config/autoload/Jobboard.module.php
+Require a dependency via composer.
+
+```bash
+composer require stellenmarkt/karriere24
 ```
 
-make sure, that ther are no cached module files by ``rm cache/module-*.php``
+You should have been asked by the zf-component-installer to add the module to the configuration.
+If - for whatever reason - this did not happen, you need to manually add the module name to the file 
+config/modules.php
 
-http://yawik.readthedocs.io/en/latest/modules/company-registration/index.html#installation
+
+Development
+-------
+1.  Clone project
+```sh
+$ git clone git@github.com:stellenmarkt/karriere24.git /path/to/karriere24 
+```
+
+2. Install dependencies:
+```sh
+$ composer install
+```
+
+3. Run PHPUnit Tests
+```sh
+$ ./vendor/bin/phpunit
+```
+
+4. Run Behat Tests
+```sh
+
+# start selenium
+$ composer run start-selenium --timeout=0
+
+# start php server
+$ composer run serve --timeout=0
+
+# run behat
+$ ./vendor/bin/behat
+
+```
+
+Licence
+-------
+
+MIT

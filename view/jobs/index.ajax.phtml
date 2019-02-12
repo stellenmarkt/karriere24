@@ -19,7 +19,7 @@ $hasFacets = $jobs instanceof \Solr\FacetsProviderInterface;
 
     <div class="row">
 
-<?php if (true || $hasFacets):?>
+<?php if ($hasFacets):?>
     <?php
     $facets = $jobs->getFacets();
     $activeFacets = $facets->getActiveValues();
@@ -77,10 +77,12 @@ $hasFacets = $jobs instanceof \Solr\FacetsProviderInterface;
             <div class="img-box">
                 <a href="<?=$href?>">
                 <?php
-                $logo = $job->getSolrValue('companyLogo');
+                $logo = $hasFacets ? $job->getSolrValue('companyLogo') : '';
                
                 if (preg_match("/^(https?:)?\/\//",$logo)) { 
                     echo '<img class="yk-logo-sm center-block" src="' . $logo .'">';
+                } elseif ('/' == $logo{0}) {
+                    echo '<img class="yk-logo-sm center-block" src="' . $this->basepath($logo) . '">';
 		        } elseif ($org && $org->getImage() &&  $org->getOrganizationName()) {
                     echo '<img class="yk-logo-sm center-block" src="';
 		            echo $this->basePath($this->organizationImageCache->getUri($job->getOrganization()->getImage(true))) . '">';

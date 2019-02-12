@@ -1,0 +1,72 @@
+{
+    "type": "yawik-module",
+    "name": "stellenmarkt/karriere24",
+    "description": "This module provides the layout and special functionality for the karriere24 yawik instance",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carsten Bleek",
+            "email": "bleek@cross-solution.de"
+        },
+        {
+            "name": "Mathias Gelhausen",
+            "email": "gelhausen@cross-solution.de"
+        },
+        {
+            "name": "Michael Ott"
+        }
+    ],
+    "keywords": [
+        "yawik", "module", "zf3", "karriere24"
+    ],
+    "config": {
+        "platform": {
+            "ext-mongo": "1.6.16"
+        },
+        "process-timeout": 0
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "yawik/auth": "^0.32 || >0.32@dev",
+        "yawik/jobs": "^0.32 || >0.32@dev",
+        "yawik/settings": "^0.32 || >0.32@dev",
+        "yawik/applications": "^0.32 || >0.32@dev",
+        "yawik/cv": "^0.32 || >0.32@dev",
+        "yawik/organizations": "^0.32 || >0.32@dev",
+        "yawik/composer-plugin": "^0.32 || >0.32@dev",
+        "yawik/core": "^0.32 || >0.32@dev",
+    	"yawik/geo": "^0.32 || >0.32@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "yawik/behat": "^0.32@dev"
+    },
+    "autoload": {
+        "psr-4": { "Karriere24\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Karriere24Test\\": "test/"
+        }
+    },
+    "extra": {
+        "zf": {
+            "module": "Karriere24"
+        }
+    },
+    "scripts": {
+        "auto-scripts": [
+            "npm install"
+        ],
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ],
+        "serve": "php -S localhost:8000 -t test/sandbox/public",
+        "start-selenium": "./vendor/bin/selenium-server-standalone -p 4444 -Dwebdriver.chrome.driver=./vendor/bin/chromedriver",
+        "test": "phpunit"
+    }
+}
