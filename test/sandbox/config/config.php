@@ -10,6 +10,7 @@ return [
         'Settings',
         'Organizations',
         'Geo',
+        'SimpleImport',
         'Karriere24',
     ],
 ];
