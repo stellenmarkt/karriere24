@@ -7,7 +7,7 @@ running on [karriere24.com](http://karriere24.com)
 Requirements
 ------------
 
-running [YAWIK](https://github.com/cross-solution/YAWIK) >= 0.32
+running [YAWIK](https://github.com/cross-solution/YAWIK) >= 0.33
 
 Installation
 ------------
