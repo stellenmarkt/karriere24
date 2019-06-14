@@ -36,6 +36,7 @@ set('default_stage', 'prod');
 host('upcoming.karriere24.de')
     ->user('yawik')
     ->stage('prod')
+    ->branch('57-geocoder-wegen-caching-upgraden')
     ->multiplexing(false) 
     ->set('deploy_path', '/var/www/production')
     ->set('writableusesudo', true);   
