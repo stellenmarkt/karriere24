@@ -7,7 +7,6 @@ before_script:
    - ssh-add <(echo "$UPCOMING_SSH_PRIVATE_KEY")
    - mkdir -p ~/.ssh
    - echo "$UPCOMING_SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts
-   - ssh yawik@upcoming.karriere24.de -C ls
    
 after_script:
   - killall ssh-agent
