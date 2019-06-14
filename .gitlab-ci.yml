@@ -21,7 +21,7 @@ deploy_master:
  only: 
    - 57-geocoder-wegen-caching-upgraden
  script:
-   - dep -vvv deploy
+   - dep -vvv --branch=57-geocoder-wegen-caching-upgraden deploy
 
 deploy_staging:
  stage: deploy
