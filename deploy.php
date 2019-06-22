@@ -3,9 +3,9 @@ namespace Deployer;
 
 require 'recipe/zend_framework.php';
 
-task('build', function () {
+task('checkout', function () {
     run('git checkout 57-geocoder-wegen-caching-upgraden');
-    })->local();
+    })->onStage('prod');
 
 
 // Project name
