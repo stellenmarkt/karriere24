@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b629c6a12f1a60bba46b034b845cf76",
+    "content-hash": "566c89e85b0ea75f21176aaba9b66b01",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -1220,6 +1220,64 @@
             "time": "2018-06-14T14:45:07+00:00"
         },
         {
+            "name": "facebook/graph-sdk",
+            "version": "5.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/php-graph-sdk.git",
+                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/2d8250638b33d73e7a87add65f47fabf91f8ad9b",
+                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4|^7.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "~5.0",
+                "mockery/mockery": "~0.8",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client",
+                "paragonie/random_compat": "Provides a better CSPRNG option in PHP 5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Facebook\\": "src/Facebook/"
+                },
+                "files": [
+                    "src/Facebook/polyfills.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Facebook Platform"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/php-graph-sdk/contributors"
+                }
+            ],
+            "description": "Facebook SDK for PHP",
+            "homepage": "https://github.com/facebook/php-graph-sdk",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "time": "2018-12-11T22:56:31+00:00"
+        },
+        {
             "name": "geocoder-php/cache-provider",
             "version": "4.1.0",
             "source": {
@@ -1574,6 +1632,63 @@
             "time": "2018-12-04T20:46:45+00:00"
         },
         {
+            "name": "hybridauth/hybridauth",
+            "version": "v2.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hybridauth/hybridauth.git",
+                "reference": "f713e93e620ccda31a724ad31f1e42e808e85994"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/f713e93e620ccda31a724ad31f1e42e808e85994",
+                "reference": "f713e93e620ccda31a724ad31f1e42e808e85994",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "facebook/graph-sdk": "^5.4",
+                "paypal/rest-api-sdk-php": "*",
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Hybrid": "hybridauth/"
+                },
+                "classmap": [
+                    "hybridauth/Hybrid"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(MIT or GPL-3.0+)"
+            ],
+            "authors": [
+                {
+                    "name": "Miled",
+                    "email": "hybridauth@gmail.com"
+                }
+            ],
+            "description": "Open source social sign on PHP library.",
+            "homepage": "http://hybridauth.sourceforge.net",
+            "keywords": [
+                "OpenId",
+                "facebook",
+                "google",
+                "hybridauth",
+                "login",
+                "oauth",
+                "social",
+                "twitter",
+                "yahoo"
+            ],
+            "time": "2019-06-11T13:22:54+00:00"
+        },
+        {
             "name": "imagine/imagine",
             "version": "1.2.1",
             "source": {
@@ -1630,6 +1745,59 @@
                 "image processing"
             ],
             "time": "2019-06-03T15:06:06+00:00"
+        },
+        {
+            "name": "jmikola/geojson",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmikola/geojson.git",
+                "reference": "6ec3016cc0215667b7775f6ead7bd0337ad66eee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmikola/geojson/zipball/6ec3016cc0215667b7775f6ead7bd0337ad66eee",
+                "reference": "6ec3016cc0215667b7775f6ead7bd0337ad66eee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "GeoJson\\": "src/"
+                },
+                "classmap": [
+                    "stubs/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                }
+            ],
+            "description": "GeoJSON implementation for PHP",
+            "homepage": "https://github.com/jmikola/geojson",
+            "keywords": [
+                "geo",
+                "geojson",
+                "geospatial"
+            ],
+            "time": "2015-09-27T15:35:21+00:00"
         },
         {
             "name": "mongodb/mongodb",
@@ -1740,6 +1908,55 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "paypal/rest-api-sdk-php",
+            "version": "1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
+                "reference": "72e2f2466975bf128a31e02b15110180f059fc04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/72e2f2466975bf128a31e02b15110180f059fc04",
+                "reference": "72e2f2466975bf128a31e02b15110180f059fc04",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.3.0",
+                "psr/log": "^1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PayPal": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "PayPal",
+                    "homepage": "https://github.com/paypal/rest-api-sdk-php/contributors"
+                }
+            ],
+            "description": "PayPal's PHP SDK for REST APIs",
+            "homepage": "http://paypal.github.io/PayPal-PHP-SDK/",
+            "keywords": [
+                "payments",
+                "paypal",
+                "rest",
+                "sdk"
+            ],
+            "time": "2019-01-04T20:04:25+00:00"
         },
         {
             "name": "php-http/cache-plugin",
@@ -3362,6 +3579,122 @@
             "time": "2018-12-26T12:01:09+00:00"
         },
         {
+            "name": "yawik/applications",
+            "version": "v0.33.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yawik/applications.git",
+                "reference": "7a5a20b2e5b1ca5800cdbd39fad1c088492470f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/applications/zipball/7a5a20b2e5b1ca5800cdbd39fad1c088492470f0",
+                "reference": "7a5a20b2e5b1ca5800cdbd39fad1c088492470f0",
+                "shasum": ""
+            },
+            "require": {
+                "yawik/core": ">=0.33@dev"
+            },
+            "type": "yawik-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.33-dev"
+                },
+                "zf": {
+                    "module": "Applications"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Applications\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
+                },
+                {
+                    "name": "Mathias Gelhausen",
+                    "email": "gelhausen@cross-solution.de"
+                },
+                {
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
+                }
+            ],
+            "description": "This package provide an Applications modules for yawik.",
+            "keywords": [
+                "module",
+                "yawik",
+                "zf"
+            ],
+            "time": "2019-04-09T06:04:08+00:00"
+        },
+        {
+            "name": "yawik/auth",
+            "version": "v0.33.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yawik/auth.git",
+                "reference": "dcf1c1f67452c24b7316deaee6310fd5575db87f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/auth/zipball/dcf1c1f67452c24b7316deaee6310fd5575db87f",
+                "reference": "dcf1c1f67452c24b7316deaee6310fd5575db87f",
+                "shasum": ""
+            },
+            "require": {
+                "hybridauth/hybridauth": "^2.10",
+                "yawik/core": ">=0.33@dev"
+            },
+            "type": "yawik-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.33-dev"
+                },
+                "zf": {
+                    "module": "Auth"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Auth\\": "src/Auth/",
+                    "Acl\\": "src/Acl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
+                },
+                {
+                    "name": "Mathias Gelhausen",
+                    "email": "gelhausen@cross-solution.de"
+                },
+                {
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
+                }
+            ],
+            "description": "This package provide an Auth modules for Yawik.",
+            "keywords": [
+                "module",
+                "yawik",
+                "zf"
+            ],
+            "time": "2019-06-04T09:46:31+00:00"
+        },
+        {
             "name": "yawik/composer-plugin",
             "version": "v1.0.0",
             "source": {
@@ -3532,6 +3865,120 @@
             "time": "2019-06-05T08:13:32+00:00"
         },
         {
+            "name": "yawik/cv",
+            "version": "v0.33.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yawik/cv.git",
+                "reference": "fca2172e21cef7bbeefd7afbac7d24cb0b50f242"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/cv/zipball/fca2172e21cef7bbeefd7afbac7d24cb0b50f242",
+                "reference": "fca2172e21cef7bbeefd7afbac7d24cb0b50f242",
+                "shasum": ""
+            },
+            "require": {
+                "yawik/core": ">=0.33@dev"
+            },
+            "type": "yawik-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.33-dev"
+                },
+                "zf": {
+                    "module": "Cv"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
+                },
+                {
+                    "name": "Mathias Gelhausen",
+                    "email": "gelhausen@cross-solution.de"
+                },
+                {
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
+                }
+            ],
+            "description": "This package provide a CV modules for yawik.",
+            "keywords": [
+                "module",
+                "yawik"
+            ],
+            "time": "2019-04-09T06:04:08+00:00"
+        },
+        {
+            "name": "yawik/geo",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yawik/geo.git",
+                "reference": "569e6b4eb38cbf31f668bf9f00aafa61877d40f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/geo/zipball/569e6b4eb38cbf31f668bf9f00aafa61877d40f0",
+                "reference": "569e6b4eb38cbf31f668bf9f00aafa61877d40f0",
+                "shasum": ""
+            },
+            "require": {
+                "jmikola/geojson": "^1.0.0",
+                "yawik/core": ">=0.33@dev"
+            },
+            "type": "yawik-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.33-dev"
+                },
+                "zf": {
+                    "module": "Geo"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Geo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
+                },
+                {
+                    "name": "Mathias Gelhausen",
+                    "email": "gelhausen@cross-solution.de"
+                },
+                {
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
+                }
+            ],
+            "description": "This package provide a Geo modules for yawik.",
+            "keywords": [
+                "module",
+                "yawik",
+                "zf3"
+            ],
+            "time": "2019-05-06T09:57:07+00:00"
+        },
+        {
             "name": "yawik/jobs",
             "version": "v0.33.14",
             "source": {
@@ -3587,6 +4034,120 @@
                 "zf3"
             ],
             "time": "2019-05-31T17:41:46+00:00"
+        },
+        {
+            "name": "yawik/organizations",
+            "version": "v0.33.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yawik/organizations.git",
+                "reference": "408973b08e86d5afb87a2c7b4643be1cbaf9ffa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/organizations/zipball/408973b08e86d5afb87a2c7b4643be1cbaf9ffa5",
+                "reference": "408973b08e86d5afb87a2c7b4643be1cbaf9ffa5",
+                "shasum": ""
+            },
+            "require": {
+                "yawik/core": ">=0.33@dev"
+            },
+            "type": "yawik-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.33-dev"
+                },
+                "zf": {
+                    "module": "Organizations"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Organizations\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
+                },
+                {
+                    "name": "Mathias Gelhausen",
+                    "email": "gelhausen@cross-solution.de"
+                },
+                {
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
+                }
+            ],
+            "description": "This package provide an Organizations module for yawik.",
+            "keywords": [
+                "module",
+                "yawik",
+                "zf3"
+            ],
+            "time": "2019-06-04T09:46:31+00:00"
+        },
+        {
+            "name": "yawik/settings",
+            "version": "v0.33.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yawik/settings.git",
+                "reference": "fc49d14a5eec21fcc074ce29b1428d91191efecf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/settings/zipball/fc49d14a5eec21fcc074ce29b1428d91191efecf",
+                "reference": "fc49d14a5eec21fcc074ce29b1428d91191efecf",
+                "shasum": ""
+            },
+            "require": {
+                "yawik/core": ">=0.33@dev"
+            },
+            "type": "yawik-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.33-dev"
+                },
+                "zf": {
+                    "module": "Settings"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Settings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
+                },
+                {
+                    "name": "Mathias Gelhausen",
+                    "email": "gelhausen@cross-solution.de"
+                },
+                {
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
+                }
+            ],
+            "description": "This package provide a Settings module for yawik.",
+            "keywords": [
+                "module",
+                "yawik",
+                "zf3"
+            ],
+            "time": "2019-04-09T06:04:08+00:00"
         },
         {
             "name": "yawik/simple-import",
@@ -6910,121 +7471,6 @@
             "time": "2019-03-17T19:47:18+00:00"
         },
         {
-            "name": "facebook/graph-sdk",
-            "version": "5.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facebook/php-graph-sdk.git",
-                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/2d8250638b33d73e7a87add65f47fabf91f8ad9b",
-                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.4|^7.0"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": "~5.0",
-                "mockery/mockery": "~0.8",
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client",
-                "paragonie/random_compat": "Provides a better CSPRNG option in PHP 5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Facebook\\": "src/Facebook/"
-                },
-                "files": [
-                    "src/Facebook/polyfills.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Facebook Platform"
-            ],
-            "authors": [
-                {
-                    "name": "Facebook",
-                    "homepage": "https://github.com/facebook/php-graph-sdk/contributors"
-                }
-            ],
-            "description": "Facebook SDK for PHP",
-            "homepage": "https://github.com/facebook/php-graph-sdk",
-            "keywords": [
-                "facebook",
-                "sdk"
-            ],
-            "time": "2018-12-11T22:56:31+00:00"
-        },
-        {
-            "name": "hybridauth/hybridauth",
-            "version": "v2.15.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "f713e93e620ccda31a724ad31f1e42e808e85994"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/f713e93e620ccda31a724ad31f1e42e808e85994",
-                "reference": "f713e93e620ccda31a724ad31f1e42e808e85994",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "facebook/graph-sdk": "^5.4",
-                "paypal/rest-api-sdk-php": "*",
-                "php": ">=5.2.0"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Hybrid": "hybridauth/"
-                },
-                "classmap": [
-                    "hybridauth/Hybrid"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "(MIT or GPL-3.0+)"
-            ],
-            "authors": [
-                {
-                    "name": "Miled",
-                    "email": "hybridauth@gmail.com"
-                }
-            ],
-            "description": "Open source social sign on PHP library.",
-            "homepage": "http://hybridauth.sourceforge.net",
-            "keywords": [
-                "OpenId",
-                "facebook",
-                "google",
-                "hybridauth",
-                "login",
-                "oauth",
-                "social",
-                "twitter",
-                "yahoo"
-            ],
-            "time": "2019-06-11T13:22:54+00:00"
-        },
-        {
             "name": "instaclick/php-webdriver",
             "version": "1.4.5",
             "source": {
@@ -7082,59 +7528,6 @@
                 "webtest"
             ],
             "time": "2017-06-30T04:02:48+00:00"
-        },
-        {
-            "name": "jmikola/geojson",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jmikola/geojson.git",
-                "reference": "6ec3016cc0215667b7775f6ead7bd0337ad66eee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jmikola/geojson/zipball/6ec3016cc0215667b7775f6ead7bd0337ad66eee",
-                "reference": "6ec3016cc0215667b7775f6ead7bd0337ad66eee",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3.7"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "GeoJson\\": "src/"
-                },
-                "classmap": [
-                    "stubs/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jeremy Mikola",
-                    "email": "jmikola@gmail.com"
-                }
-            ],
-            "description": "GeoJSON implementation for PHP",
-            "homepage": "https://github.com/jmikola/geojson",
-            "keywords": [
-                "geo",
-                "geojson",
-                "geospatial"
-            ],
-            "time": "2015-09-27T15:35:21+00:00"
         },
         {
             "name": "lakion/mink-debug-extension",
@@ -7244,55 +7637,6 @@
                 "symfony"
             ],
             "time": "2017-12-20T06:07:51+00:00"
-        },
-        {
-            "name": "paypal/rest-api-sdk-php",
-            "version": "1.14.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paypal/PayPal-PHP-SDK.git",
-                "reference": "72e2f2466975bf128a31e02b15110180f059fc04"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paypal/PayPal-PHP-SDK/zipball/72e2f2466975bf128a31e02b15110180f059fc04",
-                "reference": "72e2f2466975bf128a31e02b15110180f059fc04",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.3.0",
-                "psr/log": "^1.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "PayPal": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "PayPal",
-                    "homepage": "https://github.com/paypal/rest-api-sdk-php/contributors"
-                }
-            ],
-            "description": "PayPal's PHP SDK for REST APIs",
-            "homepage": "http://paypal.github.io/PayPal-PHP-SDK/",
-            "keywords": [
-                "payments",
-                "paypal",
-                "rest",
-                "sdk"
-            ],
-            "time": "2019-01-04T20:04:25+00:00"
         },
         {
             "name": "se/selenium-server-standalone",
@@ -8020,122 +8364,6 @@
             "time": "2019-04-06T14:04:46+00:00"
         },
         {
-            "name": "yawik/applications",
-            "version": "v0.33.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yawik/applications.git",
-                "reference": "7a5a20b2e5b1ca5800cdbd39fad1c088492470f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yawik/applications/zipball/7a5a20b2e5b1ca5800cdbd39fad1c088492470f0",
-                "reference": "7a5a20b2e5b1ca5800cdbd39fad1c088492470f0",
-                "shasum": ""
-            },
-            "require": {
-                "yawik/core": ">=0.33@dev"
-            },
-            "type": "yawik-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.33-dev"
-                },
-                "zf": {
-                    "module": "Applications"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Applications\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
-                },
-                {
-                    "name": "Mathias Gelhausen",
-                    "email": "gelhausen@cross-solution.de"
-                },
-                {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
-                }
-            ],
-            "description": "This package provide an Applications modules for yawik.",
-            "keywords": [
-                "module",
-                "yawik",
-                "zf"
-            ],
-            "time": "2019-04-09T06:04:08+00:00"
-        },
-        {
-            "name": "yawik/auth",
-            "version": "v0.33.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yawik/auth.git",
-                "reference": "dcf1c1f67452c24b7316deaee6310fd5575db87f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yawik/auth/zipball/dcf1c1f67452c24b7316deaee6310fd5575db87f",
-                "reference": "dcf1c1f67452c24b7316deaee6310fd5575db87f",
-                "shasum": ""
-            },
-            "require": {
-                "hybridauth/hybridauth": "^2.10",
-                "yawik/core": ">=0.33@dev"
-            },
-            "type": "yawik-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.33-dev"
-                },
-                "zf": {
-                    "module": "Auth"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Auth\\": "src/Auth/",
-                    "Acl\\": "src/Acl/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
-                },
-                {
-                    "name": "Mathias Gelhausen",
-                    "email": "gelhausen@cross-solution.de"
-                },
-                {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
-                }
-            ],
-            "description": "This package provide an Auth modules for Yawik.",
-            "keywords": [
-                "module",
-                "yawik",
-                "zf"
-            ],
-            "time": "2019-06-04T09:46:31+00:00"
-        },
-        {
             "name": "yawik/behat",
             "version": "v0.33.14",
             "source": {
@@ -8202,234 +8430,6 @@
                 "zf3"
             ],
             "time": "2018-11-23T01:55:06+00:00"
-        },
-        {
-            "name": "yawik/cv",
-            "version": "v0.33.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yawik/cv.git",
-                "reference": "fca2172e21cef7bbeefd7afbac7d24cb0b50f242"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yawik/cv/zipball/fca2172e21cef7bbeefd7afbac7d24cb0b50f242",
-                "reference": "fca2172e21cef7bbeefd7afbac7d24cb0b50f242",
-                "shasum": ""
-            },
-            "require": {
-                "yawik/core": ">=0.33@dev"
-            },
-            "type": "yawik-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.33-dev"
-                },
-                "zf": {
-                    "module": "Cv"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Cv\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
-                },
-                {
-                    "name": "Mathias Gelhausen",
-                    "email": "gelhausen@cross-solution.de"
-                },
-                {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
-                }
-            ],
-            "description": "This package provide a CV modules for yawik.",
-            "keywords": [
-                "module",
-                "yawik"
-            ],
-            "time": "2019-04-09T06:04:08+00:00"
-        },
-        {
-            "name": "yawik/geo",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yawik/geo.git",
-                "reference": "569e6b4eb38cbf31f668bf9f00aafa61877d40f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yawik/geo/zipball/569e6b4eb38cbf31f668bf9f00aafa61877d40f0",
-                "reference": "569e6b4eb38cbf31f668bf9f00aafa61877d40f0",
-                "shasum": ""
-            },
-            "require": {
-                "jmikola/geojson": "^1.0.0",
-                "yawik/core": ">=0.33@dev"
-            },
-            "type": "yawik-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.33-dev"
-                },
-                "zf": {
-                    "module": "Geo"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Geo\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
-                },
-                {
-                    "name": "Mathias Gelhausen",
-                    "email": "gelhausen@cross-solution.de"
-                },
-                {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
-                }
-            ],
-            "description": "This package provide a Geo modules for yawik.",
-            "keywords": [
-                "module",
-                "yawik",
-                "zf3"
-            ],
-            "time": "2019-05-06T09:57:07+00:00"
-        },
-        {
-            "name": "yawik/organizations",
-            "version": "v0.33.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yawik/organizations.git",
-                "reference": "408973b08e86d5afb87a2c7b4643be1cbaf9ffa5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yawik/organizations/zipball/408973b08e86d5afb87a2c7b4643be1cbaf9ffa5",
-                "reference": "408973b08e86d5afb87a2c7b4643be1cbaf9ffa5",
-                "shasum": ""
-            },
-            "require": {
-                "yawik/core": ">=0.33@dev"
-            },
-            "type": "yawik-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.33-dev"
-                },
-                "zf": {
-                    "module": "Organizations"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Organizations\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
-                },
-                {
-                    "name": "Mathias Gelhausen",
-                    "email": "gelhausen@cross-solution.de"
-                },
-                {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
-                }
-            ],
-            "description": "This package provide an Organizations module for yawik.",
-            "keywords": [
-                "module",
-                "yawik",
-                "zf3"
-            ],
-            "time": "2019-06-04T09:46:31+00:00"
-        },
-        {
-            "name": "yawik/settings",
-            "version": "v0.33.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yawik/settings.git",
-                "reference": "fc49d14a5eec21fcc074ce29b1428d91191efecf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yawik/settings/zipball/fc49d14a5eec21fcc074ce29b1428d91191efecf",
-                "reference": "fc49d14a5eec21fcc074ce29b1428d91191efecf",
-                "shasum": ""
-            },
-            "require": {
-                "yawik/core": ">=0.33@dev"
-            },
-            "type": "yawik-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.33-dev"
-                },
-                "zf": {
-                    "module": "Settings"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Settings\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
-                },
-                {
-                    "name": "Mathias Gelhausen",
-                    "email": "gelhausen@cross-solution.de"
-                },
-                {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
-                }
-            ],
-            "description": "This package provide a Settings module for yawik.",
-            "keywords": [
-                "module",
-                "yawik",
-                "zf3"
-            ],
-            "time": "2019-04-09T06:04:08+00:00"
         }
     ],
     "aliases": [],
