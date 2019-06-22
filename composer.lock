@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "59c3d504521fc7f4bab13979cf81aec2",
+    "content-hash": "4b629c6a12f1a60bba46b034b845cf76",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -3360,6 +3360,72 @@
                 "geoip"
             ],
             "time": "2018-12-26T12:01:09+00:00"
+        },
+        {
+            "name": "yawik/composer-plugin",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yawik/composer-plugin.git",
+                "reference": "d3a45d2ab342fc0eb21e1126e8637fb7752464e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/composer-plugin/zipball/d3a45d2ab342fc0eb21e1126e8637fb7752464e4",
+                "reference": "d3a45d2ab342fc0eb21e1126e8637fb7752464e4",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1",
+                "php": ">=5.6",
+                "psr/log": "^1.0",
+                "symfony/console": "^3.4 | ^4.1",
+                "symfony/finder": "^3.4 | ^4.1",
+                "zendframework/zend-eventmanager": "^3.2"
+            },
+            "replace": {
+                "yawik/composer-plugin": "self.version"
+            },
+            "require-dev": {
+                "composer/composer": ">=1.0.0-alpha10",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^5.7.23 || ^6.4.3",
+                "squizlabs/php_codesniffer": "^2.6.2",
+                "yawik/core": ">=0.32@dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.32-dev",
+                    "dev-develop": "0.33-dev"
+                },
+                "class": "Yawik\\Composer\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yawik\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mathias Gelhausen",
+                    "email": "gelhausen@cross-solution.de"
+                },
+                {
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
+                },
+                {
+                    "name": "Anthonius Munthi",
+                    "homepage": "https://itstoni.com"
+                }
+            ],
+            "description": "The composer plugin for yawik application",
+            "time": "2018-11-24T04:11:48+00:00"
         },
         {
             "name": "yawik/core",
@@ -8136,72 +8202,6 @@
                 "zf3"
             ],
             "time": "2018-11-23T01:55:06+00:00"
-        },
-        {
-            "name": "yawik/composer-plugin",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yawik/composer-plugin.git",
-                "reference": "d3a45d2ab342fc0eb21e1126e8637fb7752464e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yawik/composer-plugin/zipball/d3a45d2ab342fc0eb21e1126e8637fb7752464e4",
-                "reference": "d3a45d2ab342fc0eb21e1126e8637fb7752464e4",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1",
-                "php": ">=5.6",
-                "psr/log": "^1.0",
-                "symfony/console": "^3.4 | ^4.1",
-                "symfony/finder": "^3.4 | ^4.1",
-                "zendframework/zend-eventmanager": "^3.2"
-            },
-            "replace": {
-                "yawik/composer-plugin": "self.version"
-            },
-            "require-dev": {
-                "composer/composer": ">=1.0.0-alpha10",
-                "mikey179/vfsstream": "^1.6",
-                "phpunit/phpunit": "^5.7.23 || ^6.4.3",
-                "squizlabs/php_codesniffer": "^2.6.2",
-                "yawik/core": ">=0.32@dev"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.32-dev",
-                    "dev-develop": "0.33-dev"
-                },
-                "class": "Yawik\\Composer\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yawik\\Composer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mathias Gelhausen",
-                    "email": "gelhausen@cross-solution.de"
-                },
-                {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
-                },
-                {
-                    "name": "Anthonius Munthi",
-                    "homepage": "https://itstoni.com"
-                }
-            ],
-            "description": "The composer plugin for yawik application",
-            "time": "2018-11-24T04:11:48+00:00"
         },
         {
             "name": "yawik/cv",
