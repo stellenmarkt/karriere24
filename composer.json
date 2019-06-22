@@ -41,6 +41,7 @@
         "yawik/settings": "^0.33",
         "yawik/applications": "^0.33",
         "yawik/cv": "^0.33",
+        "yawik/solr": "^0.6",
         "yawik/organizations": "^0.33",
     	"yawik/geo": "^1.1",
         "yawik/simple-import": "dev-upgrade-geocoder"

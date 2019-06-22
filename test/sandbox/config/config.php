@@ -10,6 +10,7 @@ return [
         'Settings',
         'Organizations',
         'Geo',
+        'Solr',
         'SimpleImport',
         'Karriere24',
     ],
