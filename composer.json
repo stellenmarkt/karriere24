@@ -35,6 +35,7 @@
     "minimum-stability": "dev",
     "require": {
         "yawik/core": "^0.33.14",
+        "yawik/composer-plugin": "^1.0",
         "yawik/simple-import": "dev-upgrade-geocoder"
     },
     "require-dev": {
@@ -45,7 +46,6 @@
         "yawik/cv": "^0.33",
         "yawik/organizations": "^0.33",
     	"yawik/geo": "^1.1",
-        "yawik/composer-plugin": "^1.0",
         "yawik/behat": "^0.33"
     },
     "autoload": {
