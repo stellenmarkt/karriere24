@@ -3,11 +3,6 @@ namespace Deployer;
 
 require 'recipe/zend_framework.php';
 
-task('checkout', function () {
-    run('git checkout 57-geocoder-wegen-caching-upgraden');
-    });
-
-
 // Project name
 set('application', 'karriere24.de');
 
@@ -43,10 +38,9 @@ host('upcoming.karriere24.de')
     ->stage('prod')
     ->multiplexing(false) 
     ->set('deploy_path', '/var/www/production')
+    ->set('branch','57-geocoder-wegen-caching-upgraden')
     ->set('writableusesudo', true);   
     
-// checkout  57-geocoder-wegen-caching-upgraden on target system
-after('deploy:update_code', 'checkout');
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
