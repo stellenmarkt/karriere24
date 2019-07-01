@@ -4,9 +4,9 @@
 before_script:
    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'   
    - eval $(ssh-agent -s)
-   - ssh-add <(echo "$SSH_PRIVATE_KEY")
+   - ssh-add <(echo "$UPCOMING_SSH_PRIVATE_KEY")
    - mkdir -p ~/.ssh
-   - echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts
+   - echo "$UPCOMING_SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts
    
 after_script:
   - killall ssh-agent
@@ -19,10 +19,9 @@ stages:
 deploy_master:
  stage: deploy
  only: 
-   - master
+   - 57-geocoder-wegen-caching-upgraden
  script:
-   - ls -l
-   - rsync -av ./ yawik@karriere24.de:/
+   - dep -vvv  deploy
 
 deploy_staging:
  stage: deploy
