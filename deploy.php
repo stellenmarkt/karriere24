@@ -38,7 +38,7 @@ host('upcoming.karriere24.de')
     ->stage('prod')
     ->multiplexing(false) 
     ->set('deploy_path', '/var/www/production')
-    ->set('branch','57-geocoder-wegen-caching-upgraden')
+    ->set('branch','master')
     ->set('writableusesudo', true);   
     
 // [Optional] if deploy fails automatically unlock.
