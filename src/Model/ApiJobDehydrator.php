@@ -3,8 +3,8 @@
  * Karriere24
  *
  * @filesource
- * @license 
- * @copyright  
+ * @license
+ * @copyright
  */
 namespace Karriere24\Model;
 
@@ -33,7 +33,7 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
 	* @var ApplyUrl $applyUrl
 	*/
 	protected $applyUrl;
-	
+
     /**
      * @param Url $url
      *
@@ -105,7 +105,9 @@ class ApiJobDehydrator extends OriginalApiJobDehydrator
                 'requirements' => $job->getTemplateValues()->getRequirements(),
                 'qualification' => $job->getTemplateValues()->getQualifications(),
                 'benefits' => $job->getTemplateValues()->getBenefits(),
-				'html' => $job->getTemplateValues()->getHtml(),
+                'html' => $job->getTemplateValues()->getHtml(),
+                'introduction' => $job->getTemplateValues()->getIntroduction(),
+                'boilerplate' => $job->getTemplateValues()->getBoilerplate(),
             ),
 			'plainText' => $job->getMetaData('plainText'),
             'status' => $job->getStatus()->getName(),
