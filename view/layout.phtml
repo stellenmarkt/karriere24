@@ -15,7 +15,7 @@ $notifications = $this->partial('core/notifications');
 
 $this->headLink()->prependStylesheet($this->basePath('dist/css/core.min.css'));
 $this->configHeadScript()->prependFile($this->basepath('dist/js/core.js'));
-$this->configHeadScript()->appendFile($this->basePath('modules/Karriere24/cookie.notice.min.js'));
+$this->configHeadScript()->appendFile($this->basePath('modules/Karriere24/dist/karriere24.js'));
 
 $langScript = 'dist/locales/' . $lang . '.js';
 $this->configHeadScript()->appendFile($this->basePath($langScript));
@@ -24,7 +24,7 @@ $this->configHeadScript()->appendScript('var lang="' . $lang . '";'
                                         . 'var basePath="' . $this->basePath() . '";');
 
 $this->headLink()->appendStylesheet($this->basePath('modules/Karriere24/animate.min.css'));
-$this->headLink()->appendStylesheet($this->basePath('modules/Karriere24/Karriere24.css'));
+$this->headLink()->appendStylesheet($this->basePath('modules/Karriere24/dist/Karriere24.css'));
 
 ?>
 <?php echo $this->doctype(); ?>
