@@ -2,9 +2,7 @@
 <?php
 $this->headScript()->appendFile($this->basepath('modules/Core/js/core.pagination-container.js'))
      ->appendFile($this->basePath('modules/Core/js/core.forms.js'))
-
-    ->appendFile($this->basePath('modules/Karriere24/jquery.matchHeight.js'))
-    ->appendFile($this->basePath('modules/Karriere24/jobboard.js'));
+    ->appendFile($this->basePath('modules/Karriere24/js/jobboard.js'));
 
 ?>
 <?php
@@ -51,7 +49,7 @@ $this->headScript()->captureStart();
 })(jQuery);
 <?php $this->headScript()->captureEnd();?>
 
-<?php if ($jobs instanceof \Solr\FacetsProviderInterface): $this->headScript()->appendFile($this->basePath('Karriere24/jobs.facets.js')); endif; ?>
+<?php if ($jobs instanceof \Solr\FacetsProviderInterface): $this->headScript()->appendFile($this->basePath('modules/Karriere24/js/jobs.facets.js')); endif; ?>
 
 <h1 class="text-center">
 
