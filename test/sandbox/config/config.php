@@ -12,6 +12,7 @@ return [
         'Geo',
         'Solr',
         'SlmQueue',
+        'Orders',
         'SimpleImport',
         'Karriere24',
     ],
