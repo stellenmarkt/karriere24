@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "373f0edf001b28b912e9d06e29868338",
+    "content-hash": "f8037f0d39f57cedd50cc550aac0a5fc",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -3169,7 +3169,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -4217,11 +4217,17 @@
         },
         {
             "name": "yawik/simple-import",
-            "version": "v0.3.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/SimpleImport.git",
-                "reference": "2ff52b5f58765b1c5b72d7d2a6398dbbc47c5b85"
+                "reference": "6c928c6f698680fcd52a8d440f11a50630418910"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/6c928c6f698680fcd52a8d440f11a50630418910",
+                "reference": "6c928c6f698680fcd52a8d440f11a50630418910",
+                "shasum": ""
             },
             "require": {
                 "geocoder-php/cache-provider": "^4.1",
@@ -4262,56 +4268,26 @@
                     "SimpleImport\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "SimpleImportTest\\": "test/SimpleImportTest/"
-                },
-                "psr-0": {
-                    "": "test/"
-                }
-            },
-            "scripts": {
-                "auto-scripts": [
-                    "npm install"
-                ],
-                "post-install-cmd": [
-                    "@auto-scripts"
-                ],
-                "post-update-cmd": [
-                    "@auto-scripts"
-                ],
-                "serve": [
-                    "php -S localhost:8000 -t test/sandbox/public"
-                ],
-                "start-selenium": [
-                    "./vendor/bin/selenium-server-standalone -p 4444 -Dwebdriver.chrome.driver=./vendor/bin/chromedriver"
-                ],
-                "test": [
-                    "phpunit"
-                ],
-                "db.init": [
-                    "mongorestore --drop"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
                 },
                 {
                     "name": "Mathias Gelhausen",
                     "email": "gelhausen@cross-solution.de"
                 },
                 {
-                    "name": "Miroslav Fedeles",
-                    "email": "miroslav.fedeles@gmail.com"
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
                 },
                 {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
+                    "name": "Miroslav Fedeles",
+                    "email": "miroslav.fedeles@gmail.com"
                 }
             ],
             "description": "This module provides various imports",
@@ -4320,7 +4296,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-07-17T13:43:16+00:00"
+            "time": "2019-07-18T10:26:38+00:00"
         },
         {
             "name": "yawik/solr",
@@ -6222,6 +6198,17 @@
         {
             "name": "zendframework/zend-mvc-plugins",
             "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-mvc-plugins.git",
+                "reference": "b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-mvc-plugins/zipball/b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b",
+                "reference": "b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b",
+                "shasum": ""
+            },
             "require": {
                 "php": "^5.6 || ^7.0",
                 "zendframework/zend-mvc-plugin-fileprg": "^1.0",
@@ -8572,7 +8559,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yawik/simple-import": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
