@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8f6d0f3ea9958689f6b8197a88c268d",
+    "content-hash": "c1049e93a2eaf167ba01a7a5c904dee4",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -4304,16 +4304,16 @@
         },
         {
             "name": "yawik/solr",
-            "version": "v0.7.0",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/Solr.git",
-                "reference": "90177bc429571e6628676add488da079fa505908"
+                "reference": "d113064b6b873149b6922c00913ff1e555b02a8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/Solr/zipball/90177bc429571e6628676add488da079fa505908",
-                "reference": "90177bc429571e6628676add488da079fa505908",
+                "url": "https://api.github.com/repos/yawik/Solr/zipball/d113064b6b873149b6922c00913ff1e555b02a8c",
+                "reference": "d113064b6b873149b6922c00913ff1e555b02a8c",
                 "shasum": ""
             },
             "require": {
@@ -4355,16 +4355,16 @@
             ],
             "authors": [
                 {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
                 },
                 {
                     "name": "Mathias Gelhausen",
                     "email": "gelhausen@cross-solution.de"
                 },
                 {
-                    "name": "Carsten Bleek",
-                    "email": "bleek@cross-solution.de"
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
                 }
             ],
             "description": "This module enables solr search for job openings.",
@@ -4373,7 +4373,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2019-06-27T13:32:33+00:00"
+            "time": "2019-09-18T16:35:21+00:00"
         },
         {
             "name": "zendframework/zend-authentication",
