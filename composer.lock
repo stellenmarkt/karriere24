@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1049e93a2eaf167ba01a7a5c904dee4",
+    "content-hash": "136ec89b35ed9a0ee401580e62a3743c",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -1641,16 +1641,16 @@
         },
         {
             "name": "hybridauth/hybridauth",
-            "version": "v2.15.1",
+            "version": "v2.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "f713e93e620ccda31a724ad31f1e42e808e85994"
+                "reference": "096763709c9ce7319dd241757492955f6c7f6498"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/f713e93e620ccda31a724ad31f1e42e808e85994",
-                "reference": "f713e93e620ccda31a724ad31f1e42e808e85994",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/096763709c9ce7319dd241757492955f6c7f6498",
+                "reference": "096763709c9ce7319dd241757492955f6c7f6498",
                 "shasum": ""
             },
             "require": {
@@ -1694,7 +1694,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2019-06-11T13:22:54+00:00"
+            "time": "2019-08-13T22:38:25+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -4221,16 +4221,16 @@
         },
         {
             "name": "yawik/simple-import",
-            "version": "0.4.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/SimpleImport.git",
-                "reference": "d3cbd95cced2f1c6fe838243c6e96eb5424c7e76"
+                "reference": "dae0d107f604a0bcf838c8560a16e6fda6b97c08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/d3cbd95cced2f1c6fe838243c6e96eb5424c7e76",
-                "reference": "d3cbd95cced2f1c6fe838243c6e96eb5424c7e76",
+                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/dae0d107f604a0bcf838c8560a16e6fda6b97c08",
+                "reference": "dae0d107f604a0bcf838c8560a16e6fda6b97c08",
                 "shasum": ""
             },
             "require": {
@@ -4300,7 +4300,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-09-19T13:16:19+00:00"
+            "time": "2019-09-23T16:50:49+00:00"
         },
         {
             "name": "yawik/solr",
@@ -6719,28 +6719,28 @@
         },
         {
             "name": "zendframework/zend-session",
-            "version": "2.8.6",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-session.git",
-                "reference": "8e67629ba7ddc67e3b03157615156317535bffa7"
+                "reference": "0a0c7ae4d8be608e30ecff714c86164ccca19ca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/8e67629ba7ddc67e3b03157615156317535bffa7",
-                "reference": "8e67629ba7ddc67e3b03157615156317535bffa7",
+                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/0a0c7ae4d8be608e30ecff714c86164ccca19ca3",
+                "reference": "0a0c7ae4d8be608e30ecff714c86164ccca19ca3",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
                 "zendframework/zend-eventmanager": "^2.6.2 || ^3.0",
-                "zendframework/zend-stdlib": "^2.7 || ^3.0"
+                "zendframework/zend-stdlib": "^3.2.1"
             },
             "require-dev": {
                 "container-interop/container-interop": "^1.1",
                 "mongodb/mongodb": "^1.0.1",
                 "php-mock/php-mock-phpunit": "^1.1.2 || ^2.0",
-                "phpunit/phpunit": "^5.7.5 || >=6.0.13 <6.5.0",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.16",
                 "zendframework/zend-cache": "^2.6.1",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-db": "^2.7",
@@ -6759,8 +6759,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev",
-                    "dev-develop": "2.9.x-dev"
+                    "dev-master": "2.9.x-dev",
+                    "dev-develop": "2.10.x-dev"
                 },
                 "zf": {
                     "component": "Zend\\Session",
@@ -6776,13 +6776,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "manage and preserve session data, a logical complement of cookie data, across multiple page requests by the same client",
+            "description": "Object-oriented interface to PHP sessions and storage",
             "keywords": [
                 "ZendFramework",
                 "session",
                 "zf"
             ],
-            "time": "2019-08-11T19:14:12+00:00"
+            "time": "2019-09-20T12:50:51+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
@@ -8557,7 +8557,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yawik/simple-import": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
