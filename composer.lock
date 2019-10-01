@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1049e93a2eaf167ba01a7a5c904dee4",
+    "content-hash": "bc0cdeef3afd7ccc30e370f149abb9aa",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -984,23 +984,23 @@
         },
         {
             "name": "doctrine/mongodb-odm",
-            "version": "1.2.10",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/mongodb-odm.git",
-                "reference": "1e6f9490456176ed25ba79c0230f24dd6be676df"
+                "reference": "f02ec0fa999bdf3e253ce0e0207f874b356ca9cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/mongodb-odm/zipball/1e6f9490456176ed25ba79c0230f24dd6be676df",
-                "reference": "1e6f9490456176ed25ba79c0230f24dd6be676df",
+                "url": "https://api.github.com/repos/doctrine/mongodb-odm/zipball/f02ec0fa999bdf3e253ce0e0207f874b356ca9cd",
+                "reference": "f02ec0fa999bdf3e253ce0e0207f874b356ca9cd",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "~1.2",
                 "doctrine/cache": "~1.0",
                 "doctrine/collections": "~1.1",
-                "doctrine/common": "~2.4",
+                "doctrine/common": "^2.5.0",
                 "doctrine/inflector": "~1.0",
                 "doctrine/instantiator": "^1.0.1",
                 "doctrine/mongodb": "^1.6.4",
@@ -1008,7 +1008,8 @@
                 "symfony/console": "~2.3|~3.0|^4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7.21|^6.4",
+                "phpbench/phpbench": "^0.13.0",
+                "phpunit/phpunit": "^5.7.21|^7.5",
                 "symfony/yaml": "~2.3|~3.0|^4.0"
             },
             "suggest": {
@@ -1064,7 +1065,7 @@
                 "odm",
                 "persistence"
             ],
-            "time": "2019-08-17T08:52:56+00:00"
+            "time": "2019-09-26T08:56:27+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -1641,16 +1642,16 @@
         },
         {
             "name": "hybridauth/hybridauth",
-            "version": "v2.15.1",
+            "version": "v2.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "f713e93e620ccda31a724ad31f1e42e808e85994"
+                "reference": "096763709c9ce7319dd241757492955f6c7f6498"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/f713e93e620ccda31a724ad31f1e42e808e85994",
-                "reference": "f713e93e620ccda31a724ad31f1e42e808e85994",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/096763709c9ce7319dd241757492955f6c7f6498",
+                "reference": "096763709c9ce7319dd241757492955f6c7f6498",
                 "shasum": ""
             },
             "require": {
@@ -1694,7 +1695,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2019-06-11T13:22:54+00:00"
+            "time": "2019-08-13T22:38:25+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -3412,16 +3413,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.6.4",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "cad2ec2c40cee828ce5538a4bc5bbde7045a7c1b"
+                "reference": "eb2e7728a867f57938f8aed35a7ad097a1a14835"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/cad2ec2c40cee828ce5538a4bc5bbde7045a7c1b",
-                "reference": "cad2ec2c40cee828ce5538a4bc5bbde7045a7c1b",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/eb2e7728a867f57938f8aed35a7ad097a1a14835",
+                "reference": "eb2e7728a867f57938f8aed35a7ad097a1a14835",
                 "shasum": ""
             },
             "require": {
@@ -3429,10 +3430,13 @@
                 "ext-session": "*",
                 "php": ">=7.1"
             },
+            "conflict": {
+                "nette/di": "<3.0"
+            },
             "require-dev": {
-                "nette/di": "^2.4 || ~3.0.0",
+                "nette/di": "^3.0",
                 "nette/tester": "^2.2",
-                "nette/utils": "^2.4 || ^3.0",
+                "nette/utils": "^3.0",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -3441,7 +3445,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -3475,7 +3479,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2019-07-16T14:23:55+00:00"
+            "time": "2019-09-24T11:11:10+00:00"
         },
         {
             "name": "true/punycode",
@@ -4221,16 +4225,16 @@
         },
         {
             "name": "yawik/simple-import",
-            "version": "0.4.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/SimpleImport.git",
-                "reference": "d3cbd95cced2f1c6fe838243c6e96eb5424c7e76"
+                "reference": "a2701f32927c1c88c748ae2912b87c64bb6aa862"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/d3cbd95cced2f1c6fe838243c6e96eb5424c7e76",
-                "reference": "d3cbd95cced2f1c6fe838243c6e96eb5424c7e76",
+                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/a2701f32927c1c88c748ae2912b87c64bb6aa862",
+                "reference": "a2701f32927c1c88c748ae2912b87c64bb6aa862",
                 "shasum": ""
             },
             "require": {
@@ -4300,20 +4304,20 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-09-19T13:16:19+00:00"
+            "time": "2019-10-01T12:49:05+00:00"
         },
         {
             "name": "yawik/solr",
-            "version": "v0.8.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/Solr.git",
-                "reference": "d113064b6b873149b6922c00913ff1e555b02a8c"
+                "reference": "b84ce60662c4497f3b6e66cdb5bcb879b75999f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/Solr/zipball/d113064b6b873149b6922c00913ff1e555b02a8c",
-                "reference": "d113064b6b873149b6922c00913ff1e555b02a8c",
+                "url": "https://api.github.com/repos/yawik/Solr/zipball/b84ce60662c4497f3b6e66cdb5bcb879b75999f1",
+                "reference": "b84ce60662c4497f3b6e66cdb5bcb879b75999f1",
                 "shasum": ""
             },
             "require": {
@@ -4373,7 +4377,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2019-09-18T16:35:21+00:00"
+            "time": "2019-09-27T15:07:24+00:00"
         },
         {
             "name": "zendframework/zend-authentication",
@@ -5216,16 +5220,16 @@
         },
         {
             "name": "zendframework/zend-i18n",
-            "version": "2.9.0",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-i18n.git",
-                "reference": "6d69af5a04e1a4de7250043cb1322f077a0cdb7f"
+                "reference": "e17a54b3aee333ab156958f570cde630acee8b07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-i18n/zipball/6d69af5a04e1a4de7250043cb1322f077a0cdb7f",
-                "reference": "6d69af5a04e1a4de7250043cb1322f077a0cdb7f",
+                "url": "https://api.github.com/repos/zendframework/zend-i18n/zipball/e17a54b3aee333ab156958f570cde630acee8b07",
+                "reference": "e17a54b3aee333ab156958f570cde630acee8b07",
                 "shasum": ""
             },
             "require": {
@@ -5233,7 +5237,7 @@
                 "zendframework/zend-stdlib": "^2.7 || ^3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.16",
                 "zendframework/zend-cache": "^2.6.1",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-config": "^2.6",
@@ -5280,7 +5284,7 @@
                 "i18n",
                 "zf"
             ],
-            "time": "2018-05-16T16:39:13+00:00"
+            "time": "2019-09-30T12:04:37+00:00"
         },
         {
             "name": "zendframework/zend-i18n-resources",
@@ -6207,6 +6211,12 @@
                 "url": "https://github.com/zendframework/zend-mvc-plugins.git",
                 "reference": "b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-mvc-plugins/zipball/b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b",
+                "reference": "b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b",
+                "shasum": ""
+            },
             "require": {
                 "php": "^5.6 || ^7.0",
                 "zendframework/zend-mvc-plugin-fileprg": "^1.0",
@@ -6719,28 +6729,28 @@
         },
         {
             "name": "zendframework/zend-session",
-            "version": "2.8.6",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-session.git",
-                "reference": "8e67629ba7ddc67e3b03157615156317535bffa7"
+                "reference": "0a0c7ae4d8be608e30ecff714c86164ccca19ca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/8e67629ba7ddc67e3b03157615156317535bffa7",
-                "reference": "8e67629ba7ddc67e3b03157615156317535bffa7",
+                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/0a0c7ae4d8be608e30ecff714c86164ccca19ca3",
+                "reference": "0a0c7ae4d8be608e30ecff714c86164ccca19ca3",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
                 "zendframework/zend-eventmanager": "^2.6.2 || ^3.0",
-                "zendframework/zend-stdlib": "^2.7 || ^3.0"
+                "zendframework/zend-stdlib": "^3.2.1"
             },
             "require-dev": {
                 "container-interop/container-interop": "^1.1",
                 "mongodb/mongodb": "^1.0.1",
                 "php-mock/php-mock-phpunit": "^1.1.2 || ^2.0",
-                "phpunit/phpunit": "^5.7.5 || >=6.0.13 <6.5.0",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.16",
                 "zendframework/zend-cache": "^2.6.1",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-db": "^2.7",
@@ -6759,8 +6769,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev",
-                    "dev-develop": "2.9.x-dev"
+                    "dev-master": "2.9.x-dev",
+                    "dev-develop": "2.10.x-dev"
                 },
                 "zf": {
                     "component": "Zend\\Session",
@@ -6776,13 +6786,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "manage and preserve session data, a logical complement of cookie data, across multiple page requests by the same client",
+            "description": "Object-oriented interface to PHP sessions and storage",
             "keywords": [
                 "ZendFramework",
                 "session",
                 "zf"
             ],
-            "time": "2019-08-11T19:14:12+00:00"
+            "time": "2019-09-20T12:50:51+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
@@ -7595,16 +7605,16 @@
         },
         {
             "name": "instaclick/php-webdriver",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver.git",
-                "reference": "6fa959452e774dcaed543faad3a9d1a37d803327"
+                "reference": "bd9405077ca04129a73059a06873bedb5e138402"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/6fa959452e774dcaed543faad3a9d1a37d803327",
-                "reference": "6fa959452e774dcaed543faad3a9d1a37d803327",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/bd9405077ca04129a73059a06873bedb5e138402",
+                "reference": "bd9405077ca04129a73059a06873bedb5e138402",
                 "shasum": ""
             },
             "require": {
@@ -7650,7 +7660,7 @@
                 "webdriver",
                 "webtest"
             ],
-            "time": "2017-06-30T04:02:48+00:00"
+            "time": "2019-09-23T15:50:44+00:00"
         },
         {
             "name": "lakion/mink-debug-extension",
@@ -8557,7 +8567,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yawik/solr": 20,
+        "yawik/simple-import": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

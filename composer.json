@@ -36,10 +36,10 @@
         "yawik/settings": "^0.33",
         "yawik/applications": "^0.33",
         "yawik/cv": "^0.33",
-        "yawik/solr": "^0.8",
+        "yawik/solr": "dev-master",
         "yawik/organizations": "^0.33",
     	"yawik/geo": "^1.1",
-        "yawik/simple-import": "^0.4"
+        "yawik/simple-import": "dev-master"
     },
     "require-dev": {
         "yawik/behat": "^0.33"
