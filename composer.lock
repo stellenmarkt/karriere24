@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc0cdeef3afd7ccc30e370f149abb9aa",
+    "content-hash": "94300c942c710889edd7529d9827e030",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -157,16 +157,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb"
+                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
-                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/904dca4eb10715b92569fbcd79e201d5c349b6bc",
+                "reference": "904dca4eb10715b92569fbcd79e201d5c349b6bc",
                 "shasum": ""
             },
             "require": {
@@ -175,7 +175,7 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^7.5@dev"
+                "phpunit/phpunit": "^7.5"
             },
             "type": "library",
             "extra": {
@@ -221,7 +221,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2019-08-08T18:11:40+00:00"
+            "time": "2019-10-01T18:55:10+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -984,16 +984,16 @@
         },
         {
             "name": "doctrine/mongodb-odm",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/mongodb-odm.git",
-                "reference": "f02ec0fa999bdf3e253ce0e0207f874b356ca9cd"
+                "reference": "083c3fe85ac811b902e6eb1536df5429518d9729"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/mongodb-odm/zipball/f02ec0fa999bdf3e253ce0e0207f874b356ca9cd",
-                "reference": "f02ec0fa999bdf3e253ce0e0207f874b356ca9cd",
+                "url": "https://api.github.com/repos/doctrine/mongodb-odm/zipball/083c3fe85ac811b902e6eb1536df5429518d9729",
+                "reference": "083c3fe85ac811b902e6eb1536df5429518d9729",
                 "shasum": ""
             },
             "require": {
@@ -1065,7 +1065,7 @@
                 "odm",
                 "persistence"
             ],
-            "time": "2019-09-26T08:56:27+00:00"
+            "time": "2019-10-02T13:47:51+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -3588,16 +3588,16 @@
         },
         {
             "name": "yawik/applications",
-            "version": "v0.33.18",
+            "version": "v0.33.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/applications.git",
-                "reference": "1404fd8429b0fb1b29f326e09a49ca9af9c2b10d"
+                "reference": "903f860acb65c1c61595e968cbb4f378cdc259d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/applications/zipball/1404fd8429b0fb1b29f326e09a49ca9af9c2b10d",
-                "reference": "1404fd8429b0fb1b29f326e09a49ca9af9c2b10d",
+                "url": "https://api.github.com/repos/yawik/applications/zipball/903f860acb65c1c61595e968cbb4f378cdc259d6",
+                "reference": "903f860acb65c1c61595e968cbb4f378cdc259d6",
                 "shasum": ""
             },
             "require": {
@@ -3641,11 +3641,11 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2019-09-17T13:05:18+00:00"
+            "time": "2019-10-01T15:27:11+00:00"
         },
         {
             "name": "yawik/auth",
-            "version": "v0.33.18",
+            "version": "v0.33.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/auth.git",
@@ -3770,16 +3770,16 @@
         },
         {
             "name": "yawik/core",
-            "version": "v0.33.18",
+            "version": "v0.33.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "cab91c8ec40a8d0aec0025ed9e7ded2405364fed"
+                "reference": "1b89a7829ab890be79b01b1c11bd8acbc46b2991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/cab91c8ec40a8d0aec0025ed9e7ded2405364fed",
-                "reference": "cab91c8ec40a8d0aec0025ed9e7ded2405364fed",
+                "url": "https://api.github.com/repos/yawik/core/zipball/1b89a7829ab890be79b01b1c11bd8acbc46b2991",
+                "reference": "1b89a7829ab890be79b01b1c11bd8acbc46b2991",
                 "shasum": ""
             },
             "require": {
@@ -3870,11 +3870,11 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-09-17T13:14:16+00:00"
+            "time": "2019-10-04T14:11:44+00:00"
         },
         {
             "name": "yawik/cv",
-            "version": "v0.33.18",
+            "version": "v0.33.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/cv.git",
@@ -3988,16 +3988,16 @@
         },
         {
             "name": "yawik/jobs",
-            "version": "v0.33.18",
+            "version": "v0.33.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/jobs.git",
-                "reference": "4bd06275db2805a24b465a63bc8daf7376ca408a"
+                "reference": "00d867d7e9007127c868f57f869136aa5870fce4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/jobs/zipball/4bd06275db2805a24b465a63bc8daf7376ca408a",
-                "reference": "4bd06275db2805a24b465a63bc8daf7376ca408a",
+                "url": "https://api.github.com/repos/yawik/jobs/zipball/00d867d7e9007127c868f57f869136aa5870fce4",
+                "reference": "00d867d7e9007127c868f57f869136aa5870fce4",
                 "shasum": ""
             },
             "require": {
@@ -4041,7 +4041,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-09-17T13:12:11+00:00"
+            "time": "2019-10-04T14:10:52+00:00"
         },
         {
             "name": "yawik/orders",
@@ -4111,7 +4111,7 @@
         },
         {
             "name": "yawik/organizations",
-            "version": "v0.33.18",
+            "version": "v0.33.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/organizations.git",
@@ -4168,16 +4168,16 @@
         },
         {
             "name": "yawik/settings",
-            "version": "v0.33.18",
+            "version": "v0.33.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/settings.git",
-                "reference": "c1d02d7de5c09531fab96109119a8680cfe334d6"
+                "reference": "5f73df6cbe4cddd9a4270912a0aaf1a6ade25925"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/settings/zipball/c1d02d7de5c09531fab96109119a8680cfe334d6",
-                "reference": "c1d02d7de5c09531fab96109119a8680cfe334d6",
+                "url": "https://api.github.com/repos/yawik/settings/zipball/5f73df6cbe4cddd9a4270912a0aaf1a6ade25925",
+                "reference": "5f73df6cbe4cddd9a4270912a0aaf1a6ade25925",
                 "shasum": ""
             },
             "require": {
@@ -4225,16 +4225,16 @@
         },
         {
             "name": "yawik/simple-import",
-            "version": "dev-master",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/SimpleImport.git",
-                "reference": "a2701f32927c1c88c748ae2912b87c64bb6aa862"
+                "reference": "ec79a8319bb63a33d6f3715c69bf2daa8debe812"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/a2701f32927c1c88c748ae2912b87c64bb6aa862",
-                "reference": "a2701f32927c1c88c748ae2912b87c64bb6aa862",
+                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/ec79a8319bb63a33d6f3715c69bf2daa8debe812",
+                "reference": "ec79a8319bb63a33d6f3715c69bf2daa8debe812",
                 "shasum": ""
             },
             "require": {
@@ -4304,20 +4304,20 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-10-01T12:49:05+00:00"
+            "time": "2019-10-04T15:14:45+00:00"
         },
         {
             "name": "yawik/solr",
-            "version": "dev-master",
+            "version": "v0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/Solr.git",
-                "reference": "b84ce60662c4497f3b6e66cdb5bcb879b75999f1"
+                "reference": "7a7ae3558649b5d93e5bfd71615b9756ff4005f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/Solr/zipball/b84ce60662c4497f3b6e66cdb5bcb879b75999f1",
-                "reference": "b84ce60662c4497f3b6e66cdb5bcb879b75999f1",
+                "url": "https://api.github.com/repos/yawik/Solr/zipball/7a7ae3558649b5d93e5bfd71615b9756ff4005f9",
+                "reference": "7a7ae3558649b5d93e5bfd71615b9756ff4005f9",
                 "shasum": ""
             },
             "require": {
@@ -4377,7 +4377,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2019-09-27T15:07:24+00:00"
+            "time": "2019-10-04T15:05:21+00:00"
         },
         {
             "name": "zendframework/zend-authentication",
@@ -5024,16 +5024,16 @@
         },
         {
             "name": "zendframework/zend-form",
-            "version": "2.14.1",
+            "version": "2.14.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-form.git",
-                "reference": "ff9385b7d0d93d9bdbc2aa4af82ab616dbc7d4be"
+                "reference": "0b1616c59b1f3df194284e26f98c81ad0c377871"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-form/zipball/ff9385b7d0d93d9bdbc2aa4af82ab616dbc7d4be",
-                "reference": "ff9385b7d0d93d9bdbc2aa4af82ab616dbc7d4be",
+                "url": "https://api.github.com/repos/zendframework/zend-form/zipball/0b1616c59b1f3df194284e26f98c81ad0c377871",
+                "reference": "0b1616c59b1f3df194284e26f98c81ad0c377871",
                 "shasum": ""
             },
             "require": {
@@ -5098,7 +5098,7 @@
                 "form",
                 "zf"
             ],
-            "time": "2019-02-26T18:13:31+00:00"
+            "time": "2019-10-04T10:46:36+00:00"
         },
         {
             "name": "zendframework/zend-http",
@@ -5157,16 +5157,16 @@
         },
         {
             "name": "zendframework/zend-hydrator",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-hydrator.git",
-                "reference": "70b02f4d8676e64af932625751750b5ca72fff3a"
+                "reference": "2bfc6845019e7b6d38b0ab5e55190244dc510285"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/70b02f4d8676e64af932625751750b5ca72fff3a",
-                "reference": "70b02f4d8676e64af932625751750b5ca72fff3a",
+                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/2bfc6845019e7b6d38b0ab5e55190244dc510285",
+                "reference": "2bfc6845019e7b6d38b0ab5e55190244dc510285",
                 "shasum": ""
             },
             "require": {
@@ -5191,10 +5191,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-release-1.0": "1.0.x-dev",
-                    "dev-release-1.1": "1.1.x-dev",
-                    "dev-master": "2.4.x-dev",
-                    "dev-develop": "2.5.x-dev"
+                    "dev-release-2.4": "2.4.x-dev"
                 },
                 "zf": {
                     "component": "Zend\\Hydrator",
@@ -5216,7 +5213,7 @@
                 "hydrator",
                 "zf"
             ],
-            "time": "2018-11-19T19:16:10+00:00"
+            "time": "2019-10-04T11:17:36+00:00"
         },
         {
             "name": "zendframework/zend-i18n",
@@ -8498,7 +8495,7 @@
         },
         {
             "name": "yawik/behat",
-            "version": "v0.33.18",
+            "version": "v0.33.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/behat.git",
@@ -8567,10 +8564,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "yawik/solr": 20,
-        "yawik/simple-import": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
