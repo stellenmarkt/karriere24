@@ -4225,16 +4225,16 @@
         },
         {
             "name": "yawik/simple-import",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/SimpleImport.git",
-                "reference": "ec79a8319bb63a33d6f3715c69bf2daa8debe812"
+                "reference": "dbaac1df5102990da7b1003c6f472f9a6c9cc2bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/ec79a8319bb63a33d6f3715c69bf2daa8debe812",
-                "reference": "ec79a8319bb63a33d6f3715c69bf2daa8debe812",
+                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/dbaac1df5102990da7b1003c6f472f9a6c9cc2bc",
+                "reference": "dbaac1df5102990da7b1003c6f472f9a6c9cc2bc",
                 "shasum": ""
             },
             "require": {
@@ -4304,7 +4304,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-10-04T15:14:45+00:00"
+            "time": "2019-10-07T10:15:42+00:00"
         },
         {
             "name": "yawik/solr",
@@ -4584,16 +4584,16 @@
         },
         {
             "name": "zendframework/zend-code",
-            "version": "3.3.2",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-code.git",
-                "reference": "936fa7ad4d53897ea3e3eb41b5b760828246a20b"
+                "reference": "46feaeecea14161734b56c1ace74f28cb329f194"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-code/zipball/936fa7ad4d53897ea3e3eb41b5b760828246a20b",
-                "reference": "936fa7ad4d53897ea3e3eb41b5b760828246a20b",
+                "url": "https://api.github.com/repos/zendframework/zend-code/zipball/46feaeecea14161734b56c1ace74f28cb329f194",
+                "reference": "46feaeecea14161734b56c1ace74f28cb329f194",
                 "shasum": ""
             },
             "require": {
@@ -4603,7 +4603,7 @@
             "require-dev": {
                 "doctrine/annotations": "^1.0",
                 "ext-phar": "*",
-                "phpunit/phpunit": "^7.5.15",
+                "phpunit/phpunit": "^7.5.16 || ^8.4",
                 "zendframework/zend-coding-standard": "^1.0",
                 "zendframework/zend-stdlib": "^2.7 || ^3.0"
             },
@@ -4614,8 +4614,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3.x-dev",
-                    "dev-develop": "3.4.x-dev"
+                    "dev-master": "3.4.x-dev",
+                    "dev-develop": "3.5.x-dev"
                 }
             },
             "autoload": {
@@ -4633,7 +4633,7 @@
                 "code",
                 "zf"
             ],
-            "time": "2019-08-31T14:14:34+00:00"
+            "time": "2019-10-05T23:18:22+00:00"
         },
         {
             "name": "zendframework/zend-config",
@@ -6207,12 +6207,6 @@
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-mvc-plugins.git",
                 "reference": "b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-mvc-plugins/zipball/b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b",
-                "reference": "b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b",
-                "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
