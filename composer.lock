@@ -153,6 +153,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -4230,12 +4231,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/SimpleImport.git",
-                "reference": "970d71560e7158a9b5366b121664761a2d0c3990"
+                "reference": "0bfbcabaf16eb64dd55e25fe627c39e19e2fde8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/970d71560e7158a9b5366b121664761a2d0c3990",
-                "reference": "970d71560e7158a9b5366b121664761a2d0c3990",
+                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/0bfbcabaf16eb64dd55e25fe627c39e19e2fde8a",
+                "reference": "0bfbcabaf16eb64dd55e25fe627c39e19e2fde8a",
                 "shasum": ""
             },
             "require": {
@@ -4305,7 +4306,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-11-11T16:42:42+00:00"
+            "time": "2019-12-18T14:24:40+00:00"
         },
         {
             "name": "yawik/solr",
