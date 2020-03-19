@@ -7394,16 +7394,16 @@
         },
         {
             "name": "yawik/simple-import",
-            "version": "0.9.0",
+            "version": "0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/SimpleImport.git",
-                "reference": "0ad9df9a94b6f6f6b6213303e35285d12bbeb4f3"
+                "reference": "a4eee45c68dfe5cfa2118feba6ca8bcdfb497282"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/0ad9df9a94b6f6f6b6213303e35285d12bbeb4f3",
-                "reference": "0ad9df9a94b6f6f6b6213303e35285d12bbeb4f3",
+                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/a4eee45c68dfe5cfa2118feba6ca8bcdfb497282",
+                "reference": "a4eee45c68dfe5cfa2118feba6ca8bcdfb497282",
                 "shasum": ""
             },
             "require": {
@@ -7471,7 +7471,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2020-02-20T11:10:49+00:00"
+            "time": "2020-03-19T16:10:36+00:00"
         },
         {
             "name": "yawik/solr",
