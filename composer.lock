@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d21ed88aae95a5f1a06965845d1650a",
+    "content-hash": "decc9bf8ac8c4239a8d9fdf52b5dba60",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -5120,6 +5120,7 @@
                 "rest",
                 "sdk"
             ],
+            "abandoned": true,
             "time": "2019-01-04T20:04:25+00:00"
         },
         {
@@ -7394,16 +7395,16 @@
         },
         {
             "name": "yawik/simple-import",
-            "version": "0.9.1",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/SimpleImport.git",
-                "reference": "a4eee45c68dfe5cfa2118feba6ca8bcdfb497282"
+                "reference": "94e29a54b73fddad23806a448e79f0051f28eb52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/a4eee45c68dfe5cfa2118feba6ca8bcdfb497282",
-                "reference": "a4eee45c68dfe5cfa2118feba6ca8bcdfb497282",
+                "url": "https://api.github.com/repos/yawik/SimpleImport/zipball/94e29a54b73fddad23806a448e79f0051f28eb52",
+                "reference": "94e29a54b73fddad23806a448e79f0051f28eb52",
                 "shasum": ""
             },
             "require": {
@@ -7471,7 +7472,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2020-03-19T16:10:36+00:00"
+            "time": "2020-07-01T16:00:39+00:00"
         },
         {
             "name": "yawik/solr",

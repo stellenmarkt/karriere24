@@ -39,7 +39,7 @@
         "yawik/solr": "^0.9.1",
         "yawik/organizations": "^0.34",
     	"yawik/geo": "^1.1",
-        "yawik/simple-import": "^0.9"
+        "yawik/simple-import": "^0.10"
     },
     "require-dev": {
         "yawik/behat": "^0.34"
