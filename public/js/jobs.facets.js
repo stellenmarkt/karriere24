@@ -1,4 +1,4 @@
-/**
+    /**
  * YAWIK
  *
  * License: MIT
@@ -16,14 +16,14 @@
         $(document).on('click', '.facet-checkbox', function () {
             var $checkbox = $(this),
                 $form = $('#jobs-list-filter'),
-                name = $checkbox.attr('name');
+                name = $checkbox.attr('name').replace(/"/g, '&quot;');
             $form.find('input[name="' + name + '"]').remove();
             if ($checkbox.prop('checked')) {
                 $form.append('<input type="hidden" class="facet-param" name="' + name + '">');
             }
             $form.trigger('submit', {forceAjax: true});
         }).on('click', '.facet-active', function () {
-            $('#jobs-list-filter').find('input[name="' + $(this).data('name') + '"]').remove()
+            $('#jobs-list-filter').find('input[name="' + $(this).data('name').replace(/"/g, '&quot;') + '"]').remove()
                 .end().trigger('submit', {forceAjax: true});
         }).on('click', '.facet-reset', function () {
 
@@ -42,5 +42,5 @@
 
     });
 
-})(jQuery); 
- 
+})(jQuery);
+
