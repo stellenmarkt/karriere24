@@ -72,6 +72,7 @@ $this->headScript()->captureStart();
                 endif;
             endforeach;
             endif;
+            $this->filterForm->setAttribute('data-handle-by', 'native')->setAttribute('action', '');
              echo $this->searchForm($this->filterForm)  ?>
     </div>
 </nav>
