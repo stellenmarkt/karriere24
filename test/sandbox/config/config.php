@@ -10,7 +10,7 @@ return [
         'Settings',
         'Organizations',
         'Geo',
-        'Solr',
+        //'Solr',
         'SlmQueue',
         'Orders',
         'SimpleImport',
