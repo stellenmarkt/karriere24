@@ -8299,16 +8299,16 @@
         },
         {
             "name": "yawik/solr",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/Solr.git",
-                "reference": "c1140732c4d745698b057c41f325d74663ce9d97"
+                "reference": "ce9696a58c83cd9ee61bad8a00c9ab934518831f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/Solr/zipball/c1140732c4d745698b057c41f325d74663ce9d97",
-                "reference": "c1140732c4d745698b057c41f325d74663ce9d97",
+                "url": "https://api.github.com/repos/yawik/Solr/zipball/ce9696a58c83cd9ee61bad8a00c9ab934518831f",
+                "reference": "ce9696a58c83cd9ee61bad8a00c9ab934518831f",
                 "shasum": ""
             },
             "require": {
@@ -8369,7 +8369,7 @@
                 "solr",
                 "yawik"
             ],
-            "time": "2020-09-23T06:27:53+00:00"
+            "time": "2020-09-23T10:55:55+00:00"
         }
     ],
     "packages-dev": [
