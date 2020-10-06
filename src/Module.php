@@ -65,6 +65,7 @@ class Module
                         'p' => 'profession_MultiString',
                         'i' => 'industry_MultiString',
                         't' => 'employmentType_MultiString',
+                        's' => 'country_MultiString',
                         ] as $shortName => $longName) {
 
                         if ($v = $query->get($shortName)) {
