@@ -26,7 +26,7 @@ deploy_master:
   only:
     - master
   script:
-    - dep -vvv  deploy
+    - dep deploy
   resource_group: production
 
 deploy_staging:
@@ -37,7 +37,7 @@ deploy_staging:
   except:
     - master
   script:
-    dep -vvv deploy --branch=$CI_COMMIT_REF_NAME staging
+    dep deploy --branch=$CI_COMMIT_REF_NAME staging
   resource_group: staging
 
 test:
